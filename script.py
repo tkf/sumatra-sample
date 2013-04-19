@@ -1,3 +1,7 @@
+"""
+Sample script to be used from ``smt run``.
+"""
+
 import os
 
 
@@ -12,7 +16,6 @@ def simulation(parampath):
 def main(args=None):
     import argparse
     parser = argparse.ArgumentParser(
-        formatter_class=argparse.RawDescriptionHelpFormatter,
         description=__doc__)
     parser.add_argument('parampath')
     ns = parser.parse_args(args)
